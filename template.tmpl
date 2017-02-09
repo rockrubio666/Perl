@@ -1,0 +1,28 @@
+<tmpl_loop name=interfaces>
+   <div>
+    <fieldset>
+       <legend><tmpl_var name="user"></legend>
+                <form method=post action=#>
+               <input type="hidden" name="llaveprin" value="<tmpl_var name=llaveprin>" />
+        <br/>user:
+        <input type="text" name="Usuario" value="<tmpl_var name=user>" />
+        <br/>pass:
+        <input type="text" name="Password" value="<tmpl_var name=pass>" />
+        <br/>uid:
+        <input type="text" name="UID" value="<tmpl_var name=uid>" />
+        <br/>gid:
+        <input type="text" name="GID" value="<tmpl_var name=gid>" />
+        <br/>desc:
+        <input type="text" name="Descripcion" value="<tmpl_var name=desc>" />
+        <br/>home:
+        <input type="text" name="Home" value="<tmpl_var name=home>" />
+        <br/>shell:
+        <input type="text" name="Shell" value="<tmpl_var name=shell>" />
+        <br/>Shell2:
+        <input type="text" name="Shell2" value="<tmpl_var name=shell2>" />
+        <input type=hidden name ="selector" value ="controler"/>
+        <br/><input type="submit" value=":v"/>
+          </form>
+    </fieldset>
+   </div>
+</tmpl_loop>
